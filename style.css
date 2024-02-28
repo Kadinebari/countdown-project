@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  background-color: rgb(200, 200, 210);
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 22px;
+  color: rgb(72, 69, 110);
+  letter-spacing: 4px;
+  word-spacing: 3px;
+}
+.important {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(25, 24, 58);
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+.description {
+  color: rgb(81, 81, 108);
+}
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.wrapper > * {
+  margin-top: 5rem;
+  width: 40%;
+}
+.image {
+  border-radius: 10px;
+}
+.subtimer {
+  background-color: rgb(27, 20, 60);
+  border-radius: 5px;                        
+  display: flex;
+  flex-direction: column;
+  width: 85px;
+  height: 85px;
+  align-items: center;
+  justify-content: center;
+}
+.digit {
+  color: white;
+  margin: 0;
+}
+.digit_name {
+  color: white;
+  margin: 0;
+}
+
+@media screen and (max-width: 900px) {
+  * {
+    text-align: center;
+  }
+  
+  .wrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .wrapper > * {
+    width: 80%;
+  }
+}
